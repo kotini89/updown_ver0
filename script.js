@@ -6,6 +6,7 @@ const randomNumber = Math.floor(Math.random() * 101);
 var userNumber;
 
 document.getElementById("count").innerHTML = "시도횟수 : " + countNumber;
+alert(randomNumber);
 
 function alertNumber(){
 userNumber = document.getElementById('inputNumber').value;
@@ -43,7 +44,6 @@ else{
 
     if(countNumber == 0){
         document.getElementById("count").innerHTML = "5번만에 맞추기 실패";
-        document.getElementById("script2").innerHTML = "DOWN!";
         document.getElementById("submitNumber").style.display = "none";
         document.getElementById("inputNumber").style.display = "none";
     }
